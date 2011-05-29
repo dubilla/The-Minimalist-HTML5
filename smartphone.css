@@ -1,0 +1,66 @@
+ 	/*
+Theme Name: The Minimalist
+Theme URI: http://www.danubilla.com/portfolio
+Description: An effort in minimalism based on the Wordpress theme minimalism by <a href="http://www.genaehr.com/">ganeahr.com</a>.
+Version: 0.1
+Author: Dan Ubilla
+Author URI: http://www.danubilla.com/
+Tags: white, fixed width, two columns, widgets, minimalism
+
+	The Minamilist v0.1
+	http://www.danubilla.com/portfolio
+
+	This theme was designed and built by Dan Ubilla,
+	whose website you will find at http://www.danubilla.com/
+
+*/
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+
+#wrap {
+  width: 90%;
+}
+
+#header {
+  text-align: center;
+}
+
+#headerimg {
+  padding: 0;
+}
+
+#page {
+  width: 100%;
+  background-image: none;
+  box-shadow: 8px 0px 15px #888, -8px 0px 15px #888;
+  -webkit-box-shadow: 8px 0px 15px #888, -8px 0px 15px #888;
+  -moz-box-shadow: 8px 0px 15px #888, -8px 0px 15px #888;
+}
+
+#navbar {
+  padding: 0;
+}
+
+#content {
+  width: auto;
+  font-size: 100%;
+}
+
+#sidebar {
+  clear: left;
+  width: 90%;
+}
+
+#footer {
+  font-size: 50%;
+  padding: 0;
+}
+
+} /* End SMARTPHONE media query */
+
+/* "Daisy, Daisy, give me your answer do. I'm half crazy all for the love of you.
+	It won't be a stylish marriage, I can't afford a carriage.
+	But you'll look sweet upon the seat of a bicycle built for two." */
