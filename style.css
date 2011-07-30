@@ -223,26 +223,6 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 
-
-
-/**
- * Placeholder media queries for responsive design. Modify as design requires.
- * These follow after, and will override, the primary ('mobile first') styles
- * The closing /mediaquery comment is required by respond.js min/max-width Media Query polyfill
- */
-
-@media only screen and (min-width: 480px) {
-  /* Style adjustments for viewports 480px and over go here */
-
-}/*/mediaquery*/
-
-@media only screen and (min-width: 768px) {
-  /* Style adjustments for viewports 768px and over go here */
-
-}/*/mediaquery*/
-
-
-
 /**
  * Print styles.
  *
@@ -1026,56 +1006,72 @@ div.aligncenter {
 	margin: 0;
 }
 
+
 /* End captions */
 
+/**
+ * Placeholder media queries for responsive design. Modify as design requires.
+ * These follow after, and will override, the primary ('mobile first') styles
+ * The closing /mediaquery comment is required by respond.js min/max-width Media Query polyfill
+ */
 
-/* START Media Queries */
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */
 
-@media only screen 
-and (min-device-width : 320px)
-and (max-device-width : 680px) {
 
-/* Styles */
+}/*/mediaquery*/
 
-#wrap {
-  width: 90%;
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+
+}/*/mediaquery*/
+
+@media only screen and (min-width: 320px) and (max-width:480px) {
+	
+	#wrap {
+		width: 90%;
+		overflow: hidden;
+	}
+
+	#header {
+		text-align: center;
+	}
+
+	#headerimg {
+		padding: 0;
+	}
+
+	#page {
+		width: 100%;
+		background-image: none;
+	  	box-shadow: 8px 0px 15px #888, -8px 0px 15px #888;
+	  	-webkit-box-shadow: 8px 0px 15px #888, -8px 0px 15px #888;
+	  	-moz-box-shadow: 8px 0px 15px #888, -8px 0px 15px #888;
+	}
+
+	#navbar {
+	  	padding: 0 10%;
+	}
+	
+	#primary-nav {
+		float: none;
+	}
+
+	#content {
+	  	width: auto;
+	  	font-size: 100%;
+	}
+
+	#sidebar {
+		display: none;
+	}
+
+	#footer {
+	  	font-size: 50%;
+	  	padding: 0 10%;
+	}
+
 }
-
-#header {
-  text-align: center;
-}
-
-#headerimg {
-  padding: 0;
-}
-
-#page {
-  width: 100%;
-  background-image: none;
-  box-shadow: 8px 0px 15px #888, -8px 0px 15px #888;
-  -webkit-box-shadow: 8px 0px 15px #888, -8px 0px 15px #888;
-  -moz-box-shadow: 8px 0px 15px #888, -8px 0px 15px #888;
-}
-
-#navbar {
-  padding: 0;
-}
-
-#content {
-  width: auto;
-  font-size: 100%;
-}
-
-#sidebar {
-	display: none;
-}
-
-#footer {
-  font-size: 50%;
-  padding: 0;
-}
-
-} /* End SMARTPHONE media query */
 
 
 
